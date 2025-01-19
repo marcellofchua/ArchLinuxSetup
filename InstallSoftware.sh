@@ -10,4 +10,4 @@ yay -S avahi base-devel clamav dd_rescue ddrescue less more btop fzf ghostty tld
 
 sudo chsh -s $(which zsh)
 
-cp -r ../User/* ~
+cp -r User/* ~
