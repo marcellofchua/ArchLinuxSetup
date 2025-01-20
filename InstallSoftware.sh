@@ -1,13 +1,32 @@
-# Minimal Install
-yay -S curl eza grep grub nano zsh
+#!/bin/bash
+
+PS3="Select item please: "
+
+items=("Minimal" "Hyprland-Install" "Post-Hyprland" "Extras")
+
+while true; do
+    select item in "${items[@]}" Quit
+    do
+        case $REPLY in
+            1) echo "Selected item #$REPLY which means $item"
+            	yay -S eza fzf yazi zsh kitty btop clamav tldr w3m git;
+            	break;;
+            2) echo "Selected item #$REPLY which means $item"
+				yay -S hyprland-git hyprland-meta-git firefox thunar nvidia-open nvidia-settings nvidia-utils;
+				break;;
+            3) echo "Selected item #$REPLY which means $item"
+				yay -S code-oss vesktop firefox steam mullvad-vpn wofi mako kate pavucontrol okular thunar-volman ffmpeg ffmpegthumbnailer grim slurp swappy icat imgcat imgmagick pqiv ueberzugpp viu python noto-fonts noto-fonts-cjk ttf-jetbrains-mono ttf-firacode fastfetch swww;
+				sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
+				yay -S --noconfirm zsh-theme-powerlevel10k-git;
+				echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc;
+				break;;
+            4) echo "Selected item #$REPLY which means $item"
+				yay -S ghostty docker electron gnome-boxes qbittorrent qemu virt-manager lua nasm ncurses ungoogled-chromium duolingo-desktop-bin gimp anki blender vlc kdeconnect obsidian khal tty-clock cava cavalier ttf-nerd-font-symbols proton wf-recorder wttr yt-dlp ytfzf neovim npm octave perl traceroute sddm paleta gifski os-prober python-pywal16;
+				break;;
+            $((${#items[@]}+1))) echo "We're done!"; break 2;;
+            *) echo "Oopsie Woopsie, there's been a Fucky Wucky. $REPLY"; break;
+        esac
+    done
+done
+
 chsh -s $(which zsh)
-
-# Hyprland Install
-yay -S kitty gtk3 ninja gcc cmake meson libxcb xcb-proto xcb-util xcb-util-keysyms libxfixes libx11 libxcomposite libxrender pixman wayland-protocols cairo pango seatd libxkbcommon xcb-util-wm xorg-xwayland libinput libliftoff libdisplay-info cpio tomlplusplus hyprlang-git hyprcursor-git hyprwayland-scanner-git xcb-util-errors hyprutils-git glaze hyprgraphics-git nvidia-open nvidia-settings nvidia-utils sddm swww thunar ttf-jetbrains-mono wofi zsh-theme-powerlevel10k-git gtk gtk2 gtk4 qt5 qt6 hyprland-meta-git
-
-# After Hyprland Install
-yay -S avahi base-devel clamav dd_rescue ddrescue less more btop fzf ghostty tldr yazi zip gzip tar unrar unzip docker electron gnome-boxes fuse-common fuse2 fuse3 jq lua make parted partitionmanager qbittorrent qemu thunar-volman virt-manager alsa-plugins pavucontrol pipewire pulseaudio-qt wireplumber firefox ungoogled-chromium-bin w3m cava feh ffmpeg ffmpegthumbnailer gimp grim gulp icat imagemagick imgcat pqiv slurp swappy ueberzugpp viu webm kate kdeconnect mako okular paleta vlc wlogout anki blender duolingo-desktop-bin obsidian code-oss gcc git jdk-openjdk jdk21-openjdk nwg-look python noto-fonts noto-fonts-cjk se98-icon-theme-git ttf-firacode ttf-nerd-fonts-symbols cavalier fastfetch khal proton steam tty-clock vesktop wf-recorder wttr yt-dlp ytfzf nasm ncurses neovim npm octave perl traceroute
-
-sudo chsh -s $(which zsh)
-
-cp -r User/* ~
