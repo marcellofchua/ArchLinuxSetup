@@ -24,7 +24,7 @@ while true; do
 				yay -S ghostty docker electron gnome-boxes qbittorrent qemu virt-manager lua nasm ncurses ungoogled-chromium duolingo-desktop-bin gimp anki blender vlc kdeconnect obsidian khal tty-clock cava cavalier ttf-nerd-font-symbols proton wf-recorder wttr yt-dlp ytfzf neovim npm octave perl traceroute sddm paleta gifski os-prober python-pywal16;
 				break;;
             $((${#items[@]}+1))) echo "We're done!"; break 2;;
-            *) echo "Oopsie Woopsie, there's been a Fucky Wucky. $REPLY"; break;
+            *) echo "Oopsie Woopsie. $REPLY"; break;
         esac
     done
 done
