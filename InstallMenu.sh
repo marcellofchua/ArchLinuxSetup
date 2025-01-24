@@ -16,10 +16,7 @@ while true; do
 		python jdk-openjdk jdk21-openjdk jdk17-openjdk\
 		steam vesktop mullvad-vpn code-oss\
   		grim slurp swappy feh cava icat imgcat imgmagick pqiv ueberzugpp ffmpeg ffmpegthumbnailer viu tumbler\
-		noto-fonts noto-fonts-cjk ttf-jetbrains-mono ttf-firacode ttf-nerd-font-symbols;\
-		sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
-		yay -S --noconfirm zsh-theme-powerlevel10k-git;
-		echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc;
+		noto-fonts noto-fonts-cjk ttf-jetbrains-mono ttf-firacode ttf-nerd-font-symbols;
 		break;;
             4) echo "Selected item #$REPLY which means $item"
 		yay -S ghostty docker electron gnome-boxes qbittorrent qemu virt-manager\
@@ -50,6 +47,9 @@ while true; do
 		mv awrit ~Git/NotMine;
 		break;;
 	    6) echo "Selected item #$REPLY which means $item"
+     		sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
+       		yay -S --noconfirm zsh-theme-powerlevel10k-git;
+		echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc;
 		chsh -s $(which zsh);
 		break;;
             $((${#items[@]}+1))) echo "Quit InstallerMenu.sh"; break 2;;
