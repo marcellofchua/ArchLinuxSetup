@@ -3,17 +3,18 @@ POST-INSTALL Script for configuring my user account and computer AFTER installin
 
 ![image](https://github.com/marcellofchua/ArchLinuxSetup/blob/main/Screenshot.png)
 
-To Do:
-1. Edit the script to git clone Chicago95 and move the icons and fonts into the correct places.
-2. Figure out how to configure the sounds in Chicago95 for Arch, then edit the script to automate those configurations.
-3. Add more to the script for configuring gnome-boxes (might not make sense given how large .ISOs are for downloads.
-  3a. I plan to build VMs for RedHat, Kubuntu, OpenSUSE, FreeBSD, Kolibri, MacOS, and Windows 12 (whenever that finally gets released).
-4. See how much I can automate in-regards to Wal.
-5. Test the InstallMenu.sh script on a new image, then repeat until I get the results I want/need.
-6. Remove unnecessary software or duplicate installs.
-
 Notes:
-There is still a lot more that can be automated here, but currently this is enough to prevent a re-image from being a very critical issue for daily-life.
-It would still cost me an afternoon to run through the whole script and be satisfied enough to slow down, but I can't help but want to iron this out even though I have other things to do lol.
-This will eventually go Private, unless I can fix all the assets in here that should be cloned with Git instead of included in this repository.
-I am working on fixing this, as well as providing the links/source and Artist names for the Fastfetch and Wallpaper images I'm using for my themes.
+Work in progress, there is a lot wrong with how this repository is setup, and some small issues with how the main script makes directories and copies files.
+This will be a slow project as things get ironed out.
+I do want to include the art I use in this repository (and it is in here), but I need to add the artist names and sources.
+There is also some work in here done by others on GitHub, and I will work on crediting them until I'm able to completely replace it with a new concept and code.
+
+Bina made the fastfetch icons and configuration.
+  https://github.com/LierB/fastfetch.
+Chicago98 is from grassmunk.
+  https://github.com/grassmunk/Chicago95.
+Neuro-sama mouse cursor icon is not on Github, but on Ko-fi from user NOiiRE.
+  https://ko-fi.com/s/95328bc5e7
+
+In-order to address the issue with their code being included in this repository, I am working on re-writing the script to Git clone these projects instead of having their code in this repository.
+My apologies for the mess here. This was intended to be a quick and dirty solution for getting a new image of Linux running ASAP in-case my computer gets nuked or I need to nuke it.
