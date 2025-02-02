@@ -10,11 +10,11 @@ I do want to include the art I use in this repository (and it is in here), but I
 There is also some work in here done by others on GitHub, and I will work on crediting them until I'm able to completely replace it with a new concept and code.
 
 Bina made the fastfetch icons and configuration.
-  https://github.com/LierB/fastfetch.
+-https://github.com/LierB/fastfetch.
 Chicago98 is from grassmunk.
-  https://github.com/grassmunk/Chicago95.
+-https://github.com/grassmunk/Chicago95.
 Neuro-sama mouse cursor icon is not on Github, but on Ko-fi from user NOiiRE.
-  https://ko-fi.com/s/95328bc5e7
+-https://ko-fi.com/s/95328bc5e7
 
 In-order to address the issue with their code being included in this repository, I am working on re-writing the script to Git clone these projects instead of having their code in this repository.
 My apologies for the mess here. This was intended to be a quick and dirty solution for getting a new image of Linux running ASAP in-case my computer gets nuked or I need to nuke it.
