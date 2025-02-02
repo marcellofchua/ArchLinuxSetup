@@ -15,8 +15,8 @@ while true; do
 		yay -S fastfetch wofi mako pavucontrol kate okular thunar-volman swww python-pywal16 sox\
 		python jdk-openjdk jdk21-openjdk jdk17-openjdk\
 		steam vesktop mullvad-vpn code\
-  		grim slurp swappy feh cava icat imgcat imgmagick pqiv ueberzugpp ffmpeg ffmpegthumbnailer viu tumbler\
-		noto-fonts noto-fonts-cjk ttf-jetbrains-mono ttf-firacode ttf-nerd-font-symbols;
+  		grim slurp swappy feh cava icat imgcat imagemagick pqiv ueberzugpp ffmpeg ffmpegthumbnailer viu tumbler\
+		noto-fonts noto-fonts-cjk ttf-jetbrains-mono ttf-firacode ttf-nerd-fonts-symbols;
 		break;;
             4) echo "Selected item #$REPLY which means $item"
 		yay -S ghostty docker electron gnome-boxes qbittorrent qemu virt-manager\
@@ -31,10 +31,11 @@ while true; do
 		swww img ~/Pictures/Wallpapers/toyama.gif;
 		cp -r dotFiles/dotConfig/* ~/.config;
 		cp -r dotFiles/dotUser/* ~/;
+  		mkdir ~ 
 		cp -r dotFiles/dotMozilla/chrome ~/.mozilla/firefox/*.default-release/;
-		mkdir ~ .themes;
-		mkdir ~ .icons;
-		mkdir ~ .fonts;
+		mkdir ~/.themes;
+		mkdir ~/.icons;
+		mkdir ~/.fonts;
 		cp -r Themeing/Chicago95 ~/.themes;
 		cp -r Themeing/Icons/* ~/.icons;
 		cp -r Themeing/Fonts/* ~/.fonts;
@@ -42,8 +43,7 @@ while true; do
 		mkdir ~ Git/Mine;
 		cp -r Themeing/Neuro-sama ~/.icons;
 		mkdir ~ Git/NotMine;
-		git clone https://github.com/chase/awrit ~;
-		mv awrit ~Git/NotMine;
+		git clone https://github.com/chase/awrit ~/Git/NotMine;
 		break;;
 	    6) echo "Selected item #$REPLY which means $item"
      		sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
