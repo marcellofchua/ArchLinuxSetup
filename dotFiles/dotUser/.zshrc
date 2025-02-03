@@ -11,13 +11,14 @@ plugins=(
     zsh-syntax-highlighting
 )
 
-### Aliases
+### START of ALIASES
 # Main
 alias ls='eza -x --color=auto'
 alias grep='grep --color=auto'
 alias date="date +%D' '%A' '%r"
 alias cal='khal calendar'
 alias ff='kitten icat -n --align=left ~/Pictures/Fastfetch/sunny.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc'
+alias ff2='kitten icat -n --align=left ~/Pictures/Ljot.Swanhild/test.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc'
 alias yz='yazi'
 # Configuration Files
 alias kc='sudo nano ~/.config/kitty/kitty.conf'
@@ -49,24 +50,20 @@ alias gitp='git push -u origin main'
 # Language Translations
 alias enl='trans en:nl'
 alias nle='trans nl:en -b'
-# Programs
-alias vial='~/Stuff/AppImages/./Vial.AppImage'
-alias steaM='~/.millennium/start.sh'
-# Development
-alias testSDDM='sddm-greeter --test-mode --theme'
 # My Programs
 alias borderCalc='python ~/Projects/CalculationsForMe/LoginBoxBorderCalculator.py'
 # Testing
 alias testNotif='~/.config/mako/testNotifications.sh'
-# Fun
-alias ghost='~/.config/ghostty/danceghosttydance/./ghostty-animation'
+alias testSDDM='sddm-greeter --test-mode --theme'
+
+### END of ALIASES
 
 cat /home/smonk/.cache/wal/sequences
 wal -R
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+export PATH=$PATH:/home/NecroAme/.millennium/ext/bin
 clear
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
