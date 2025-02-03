@@ -35,9 +35,6 @@ while true; do
 		cp -r dotFiles/dotConfig/* ~/.config/;
 		cp -r dotFiles/dotUser/* ~/;
 		mkdir ~/.themes ~/.icons ~/.fonts;
-		cp -r Themeing/Chicago95 ~/.themes;
-		cp -r Themeing/Icons/* ~/.icons;
-		cp -r Themeing/Fonts/* ~/.fonts;
   		cp -r Themeing/Neuro-sama ~/.icons;
 		break;;
 	    6) echo "Selected item #$REPLY which means $item"
