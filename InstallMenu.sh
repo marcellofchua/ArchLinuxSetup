@@ -30,12 +30,12 @@ while true; do
   		git clone https://github.com/hmlendea/dl-desktop ~/Git/NotMine;
 		break;;
 	    5) echo "Selected item #$REPLY which means $item"
+     		chmod u+x dotFiles/dotUser/nameToDot.sh;
+      	 	cp -r dotFiles/dotUser/* ~/;
+		~/./nameToDot.sh;
+    		cp -r dotFiles/dotConfig/* ~/.config/;
 		cp -r Pictures/* ~/Pictures/;
-		swww img ~/Pictures/Wallpapers/toyama.gif;
-		cp -r dotFiles/dotConfig/* ~/.config/;
-		cp -r dotFiles/dotUser/* ~/;
-		chmod u+x dotFiles/dotUser/nameToDot.sh;
-		dotFiles/dotUser/./nameToDo.sh;
+		swww img ~/Pictures/Wallpapers/toyama.gif;	
 		mkdir ~/.themes ~/.icons ~/.fonts;
   		cp -r Themeing/Neuro-sama ~/.icons;
 		break;;
