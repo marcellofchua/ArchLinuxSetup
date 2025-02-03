@@ -34,9 +34,8 @@ while true; do
 		swww img ~/Pictures/Wallpapers/toyama.gif;
 		cp -r dotFiles/dotConfig/* ~/.config/;
 		cp -r dotFiles/dotUser/* ~/;
-		chmod u+x nameToDot.sh;
-		./nameToDo.sh;
-		rm nameToDo.sh;
+		chmod u+x dotFiles/dotUser/nameToDot.sh;
+		dotFiles/dotUser/./nameToDo.sh;
 		mkdir ~/.themes ~/.icons ~/.fonts;
   		cp -r Themeing/Neuro-sama ~/.icons;
 		break;;
