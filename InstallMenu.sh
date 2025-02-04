@@ -29,7 +29,7 @@ while true; do
                 python jdk-openjdk jdk21-openjdk jdk17-openjdk rust vim neovim nasm perl lua ncurses\
                 xdg-desktop-portal-gtk steam ghostty kdeconnect blender gimp gifski;
                 curl -fsSL "https://raw.githubusercontent.com/SteamClientHomebrew/Millennium/main/scripts/install.sh" | sh;
-                mkdir ~/Git/ ~/Git/Mine ~/Git/NotMine;
+                mkdir -p ~/Git/NotMine;
                 git clone https://github.com/chase/awrit ~/Git/NotMine;
                 git clone https://github.com/hmlendea/dl-desktop ~/Git/NotMine;
                 break;;
