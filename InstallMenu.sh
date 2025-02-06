@@ -37,13 +37,13 @@ while true; do
                 cp -r Pictures/* ~/Pictures;
                 break;;
             5) echo "Selected item #$REPLY which means $item"
-     		sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
-       		yay -S --noconfirm zsh-theme-powerlevel10k-git;
-            echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc;
-            git clone https://github.com/zsh-users/zsh-syntax-highlighting /usr/share/;
-    		echo 'source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >>~/.zshrc;
-      		chsh -s $(which zsh);
-            break;;
+     		    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
+       		    yay -S --noconfirm zsh-theme-powerlevel10k-git;
+                echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc;
+                git clone https://github.com/zsh-users/zsh-syntax-highlighting /usr/share/;
+    		    echo 'source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >>~/.zshrc;
+      		    chsh -s $(which zsh);
+                break;;
             $((${#items[@]}+1))) echo "Quit InstallerMenu.sh"; break 2;;
             *) echo "Oopsie Woopsie. $REPLY"; break;
         esac
