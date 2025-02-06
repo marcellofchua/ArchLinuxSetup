@@ -18,7 +18,7 @@ alias grep='grep --color=auto'
 alias date="date +%D' '%A' '%r"
 alias cal='khal calendar'
 alias ff='kitten icat -n --align=left ~/Pictures/Fastfetch/sunny.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc'
-alias ff2='kitten icat -n --align=left ~/Pictures/Ljot.Swanhild/test.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc'
+alias ff2='kitten icat -n --align=left ~/Pictures/Fastfetch/restingsun.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc'
 alias yz='yazi'
 # Configuration Files
 alias kc='sudo nano ~/.config/kitty/kitty.conf'
