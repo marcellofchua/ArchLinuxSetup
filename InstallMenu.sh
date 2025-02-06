@@ -6,7 +6,7 @@ while true; do
     do
         case $REPLY in
             1) echo "Selected item #$REPLY which means $item"
-            	yay -S kitty zsh man tldr btop eza fzf yazi git clamav os-prober\
+            	yay -S kitty zsh man tldr btop eza fzf yazi clamav os-prober\
             	hyprland-git hyprland-meta-git\
             	firefox thunar wofi\
             	nvidia-open nvidia-settings nvidia-utils;
