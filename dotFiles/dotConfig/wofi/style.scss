@@ -1,6 +1,6 @@
 /* The name of the window itself */
 #window {
-	background-color: rgba(16, 129, 129, 0.6);
+	background-color: rgba(70,60,133,1);
 	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 	border-radius: 1rem;
 	font-size: 3rem;
@@ -8,10 +8,10 @@
 	#outer-box {
 		/* The name of the search bar */
 		#input {
-			background-color: rgba(16, 129, 129, 0.6);
-			color: #000000;
+			background-color: rgba(70,60,133,1);
+			color: #7CEC5C;
 			border: none;
-			border-bottom: 1px solid rgba(16, 129, 129, 0.2);
+			border-bottom: 1px solid rgba(70,60,133,1);
 			padding: 1rem 1rem;
 			font-size: 3rem;
 			border-radius: 1rem 1rem 0 0;
@@ -28,8 +28,8 @@
 			#inner-box {
 				/* The name of all entries */
 				#entry {
-					color: #fff; 
-					background-color: rgba(16, 129, 129, 0.1);
+					color: #7CEC5C; 
+					background-color: rgba(70,60,133,1);
 					padding: 1rem 1rem;
 
 					/* The name of all images in entries displayed in image mode */
@@ -40,8 +40,8 @@
 					/* The name of all the text in entries */
 					#text {}
 					&:selected {
-						color: #fff; 
-						background-color: rgba(255,255,255,0.1);
+						color: #7CEC5C; 
+						background-color: rgba(70,60,133,1);
 						outline: none;
 					}
 				}

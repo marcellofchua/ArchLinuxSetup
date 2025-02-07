@@ -1,6 +1,6 @@
 #window {
-  background-color: rgba(189, 189, 188, 0.6);
-  box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 1), 0 4px 6px -4px rgba(255, 255, 255, 1);
+  background-color: rgba(124,236,93,1);
+  box-shadow: 0 10px 15px -3px rgba(70,60,133,1), 0 4px 6px -4px rgba(70,60,133,1);
   font-size: 2rem;
   font-family: "Windows";
 }
@@ -8,10 +8,10 @@
   padding: 0.15rem;
 }
 #window #outer-box #input {
-  background-color: rgba(16, 129, 129, 0.9);
-  color: #000000;
+  background-color: rgba(31,25,50,1);
+  color: #5D54C5;
   border: none;
-  border-bottom: 1px solid rgba(16, 129, 129, 0.9);
+  border-bottom: 1px solid rgba(124,236,92,1);
   padding: 1rem 1rem;
   font-size: 3rem;
 }
@@ -25,8 +25,8 @@
 #window #outer-box #scroll #inner-box {
 }
 #window #outer-box #scroll #inner-box #entry {
-  color: #000;
-  background-color: rgba(189, 189, 188, 1);
+  color: #7CEC5C;
+  background-color: rgba(31,25,50,1);
   padding: 1rem 1rem;
 }
 #window #outer-box #scroll #inner-box #entry #img {
@@ -34,7 +34,7 @@
   margin-right: 1rem;
 }
 #window #outer-box #scroll #inner-box #entry:selected {
-  color: #000;
-  background-color: rgba(16, 16, 73, 1);
+  color: #C25F90;
+  background-color: rgba(194,95,144,1);
   outline: none;
 }
