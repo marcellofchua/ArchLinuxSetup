@@ -2,8 +2,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
-
+ZSH_THEME=Chicago95
 # Standard plugins can be found in $ZSH/plugins/
 plugins=(
     git
@@ -17,9 +16,9 @@ alias ls='eza -x --color=auto'
 alias grep='grep --color=auto'
 alias date="date +%D' '%A' '%r"
 alias cal='khal calendar'
-alias ff='kitten icat -n --align=left ~/Pictures/Fastfetch/sunny.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc'
-alias ff2='kitten icat -n --align=left ~/Pictures/Fastfetch/restingsun.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc'
+alias ff='kitten icat -n --align=left ~/Pictures/Fastfetch/restingsunFF.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc'
 alias yz='yazi'
+alias klok='tty-clock -sc'
 # Configuration Files
 alias kc='sudo nano ~/.config/kitty/kitty.conf'
 alias gc='sudo nano ~/.config/ghostty/config'
@@ -50,8 +49,6 @@ alias gitp='git push -u origin main'
 # Language Translations
 alias enl='trans en:nl'
 alias nle='trans nl:en -b'
-# My Programs
-alias borderCalc='python ~/Projects/CalculationsForMe/LoginBoxBorderCalculator.py'
 # Testing
 alias testNotif='~/.config/mako/testNotifications.sh'
 alias testSDDM='sddm-greeter --test-mode --theme'
