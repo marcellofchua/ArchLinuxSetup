@@ -11,6 +11,7 @@ plugins=(
 )
 
 ### START of ALIASES
+##
 # Main
 alias ls='eza -x --color=auto'
 alias grep='grep --color=auto'
@@ -52,7 +53,7 @@ alias nle='trans nl:en -b'
 # Testing
 alias testNotif='~/.config/mako/testNotifications.sh'
 alias testSDDM='sddm-greeter --test-mode --theme'
-
+##
 ### END of ALIASES
 
 cat /home/smonk/.cache/wal/sequences
