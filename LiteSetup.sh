@@ -15,10 +15,7 @@ while true; do
 	    	yay -S okular kate code gnome-boxes;
 		break;;
   	    4) echo "Selected item #$REPLY which means $item"
-	    	yay -S mako ntp brightnessctl\
-      		ffmpeg fastfetch w3m tty-clock khal\
-      		cava feh tumbler viu grim slurp imagemagick icat\
-      		awk sed lynx nasm;
+	    	yay -S mako ntp brightnessctl ffmpeg fastfetch w3m tty-clock khal cava feh tumbler viu grim slurp imagemagick icat awk sed lynx nasm;
 		break;;
 	    5) echo "Selected item #$REPLY which means $item"
      		sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
