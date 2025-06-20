@@ -11,24 +11,21 @@ plugins=(
 )
 
 ### START of ALIASES
-##
 # Main
 alias ls='eza -x --color=auto'
 alias grep='grep --color=auto'
 alias date="date +%D' '%A' '%r"
 alias cal='khal calendar'
-alias ff='kitten icat -n --align=left ~/Pictures/Fastfetch/restingsunFF.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc'
+alias ff='kitten icat -n --align=left ~/Pictures/Fastfetch/711FF.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc'
+#alias ff='kitten icat -n --align=left ~/Pictures/Fastfetch/cirnospin.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc'
 alias yz='yazi'
 alias klok='tty-clock -sc'
+alias wcp='wl-copy'
 # Configuration Files
 alias kc='sudo nano ~/.config/kitty/kitty.conf'
-alias gc='sudo nano ~/.config/ghostty/config'
 alias hc='sudo nano ~/.config/hypr/hyprland.conf'
-alias bc='sudo nano ~/.bashrc'
 alias zc='sudo nano ~/.zshrc'
 alias ffc='sudo nano .config/fastfetch/config.jsonc'
-# Drives and Shortcuts
-alias kde-polkit='/usr/lib/polkit-kde-authentication-agent-1'
 # Media Commands
 alias pq='pqiv -ci'
 alias wfa='wf-recorder'
@@ -50,10 +47,8 @@ alias gitp='git push -u origin main'
 # Language Translations
 alias enl='trans en:nl'
 alias nle='trans nl:en -b'
-# Testing
-alias testNotif='~/.config/mako/testNotifications.sh'
-alias testSDDM='sddm-greeter --test-mode --theme'
-##
+# Fun things
+alias shonk='display3d ~/Git/display3d/resources/blahaj.obj -t 0,0,5.5'
 ### END of ALIASES
 
 cat /home/smonk/.cache/wal/sequences
