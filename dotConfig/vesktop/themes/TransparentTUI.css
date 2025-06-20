@@ -1,0 +1,29 @@
+/**
+ * @name TransparentTUI
+ * @description TUI-style with transparency.
+ * @author Smokebong.Schwammkopf
+ * @version
+ * @website
+ * @source
+ * @authorID
+ * @authorLink
+*/
+
+:root {
+
+    
+    
+    /*Dark Mode*/
+    --dark-bg: transparent;
+    
+    /*Light Mode*/
+    --light-bg: transparent;
+}
+
+:root,
+.theme-dark,
+.theme-light {
+    --background-image: url('https://github.com/marcellofchua/DiscordThemes/transparent_picture.png')
+    --background-primary: transparent;
+    --background-secondary: transparent;
+}

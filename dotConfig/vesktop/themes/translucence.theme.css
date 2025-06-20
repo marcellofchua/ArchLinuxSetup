@@ -1,0 +1,57 @@
+/**
+ * @name Translucence
+ * @version 1.0.6.3
+ * @description A translucent/frosted glass Discord theme
+ * @author CapnKitten
+ * @website http://github.com/CapnKitten
+ * @source https://github.com/CapnKitten/BetterDiscord/blob/master/Themes/Translucence/css/source.css
+ * @donate https://paypal.me/capnkitten
+ * @invite jzJkA6Z
+ * @BDEditor Translucence
+*/
+
+@import url('https://capnkitten.github.io/BetterDiscord/Themes/Translucence/css/source.css');
+
+:root {
+  --app-bg: transparent;
+  --app-blur: 12px;
+  --app-margin: 12px;
+  --app-radius: 0px;
+  --accent-hue: 0;
+  --accent-saturation: 80%;
+  --accent-lightness: 75%;
+  --accent-opacity: 1;
+  --sidebar-color: rgba(0,0,0,0.4);
+  --main-content-color: rgba(0,0,0,0.2);
+  --undefined: 0;
+  --interactive-normal: #FFFFFF;
+  --interactive-hover: #FFFFFF;
+  --interactive-active: #FFFFFF;
+  --interactive-muted: #FFFFFF;
+  --undefined: 0;
+  --background-modifier-hover: rgba(255,255,255,0.075);
+  --background-modifier-selected: rgba(255,255,255,0.125);
+  --message-color: rgb(255,255,255,0.05);
+  --message-radius: 0px;
+  --message-padding-top: 8px;
+  --message-padding-side: 8px;
+  --undefined: 0;
+  --reply-hue: 0;
+  --reply-saturation: 100%;
+  --reply-lightness: 70%;
+  --reply-opacity: 1;
+  --textarea-color: 255,255,255;
+  --textarea-alpha: 0.05;
+  --textarea-alpha-focus: 0.15;
+  --textarea-radius: 0px;
+  --card-color: rgba(0,0,0,0.4);
+  --card-color-hover: rgba(0,0,0,0.5);
+  --card-color-select: rgba(0,0,0,0.7);
+  --button-height: 32px;
+  --button-padding: 0 16px;
+  --button-radius: 16px;
+}
+
+/* Any custom CSS below here */
+  --font: 'JetBrains Mono';
+  --panel-roundness: 0px;
