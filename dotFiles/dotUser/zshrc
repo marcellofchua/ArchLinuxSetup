@@ -2,7 +2,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-ZSH_THEME=Chicago95
 # Standard plugins can be found in $ZSH/plugins/
 plugins=(
     git
@@ -16,47 +15,21 @@ alias ls='eza -x --color=auto'
 alias grep='grep --color=auto'
 alias date="date +%D' '%A' '%r"
 alias cal='khal calendar'
-alias ff='kitten icat -n --align=left ~/Pictures/Fastfetch/711FF.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc'
-#alias ff='kitten icat -n --align=left ~/Pictures/Fastfetch/cirnospin.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc'
+alias ff='kitten icat -n --align=left ~/Pictures/Fastfetch/darkpurple2FF.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc'
 alias yz='yazi'
-alias klok='tty-clock -sc'
-alias wcp='wl-copy'
 # Configuration Files
 alias kc='sudo nano ~/.config/kitty/kitty.conf'
 alias hc='sudo nano ~/.config/hypr/hyprland.conf'
 alias zc='sudo nano ~/.zshrc'
-alias ffc='sudo nano .config/fastfetch/config.jsonc'
-# Media Commands
-alias pq='pqiv -ci'
-alias wfa='wf-recorder'
-alias wfr='wf-recorder -g "$(slurp)"'
-alias wfs='wf-recorder -a'
-alias sortrename='ls -v | cat -n | while read n f; do mv -n "$f" "$n.ext"; done '
-alias imgres='ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0'
-# Mullvad VPN
-alias mad='mullvad'
-alias madc='mullvad connect'
-alias madd='mullvad disconnect'
-alias mads='mullvad status'
-# Git
-alias gits='git status'
-alias gita='git add'
-alias gitc='git commit -m'
-alias gitl='git log'
-alias gitp='git push -u origin main'
+alias ffc='sudo nano ~/.config/fastfetch/config.jsonc'
 # Language Translations
 alias enl='trans en:nl'
 alias nle='trans nl:en -b'
-# Fun things
-alias shonk='display3d ~/Git/display3d/resources/blahaj.obj -t 0,0,5.5'
 ### END of ALIASES
-
-cat /home/smonk/.cache/wal/sequences
-wal -R
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-export PATH=$PATH:/home/NecroAme/.millennium/ext/bin
+wal -R
 clear
