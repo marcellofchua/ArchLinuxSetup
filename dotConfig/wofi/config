@@ -1,7 +1,7 @@
 width=640
-height=800
+height=790
 mode=drun
-filter_rate=100
+filter_rate=60
 term=kitty
 allow_markup=true
 allow_images=true
