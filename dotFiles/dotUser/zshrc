@@ -15,8 +15,11 @@ alias ls='eza -x --color=auto'
 alias grep='grep --color=auto'
 alias date="date +%D' '%A' '%r"
 alias cal='khal calendar'
-alias ff='kitten icat -n --align=left ~/Pictures/Fastfetch/darkpurple2FF.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc'
+alias ff='kitten icat -n --align=left ~/Pictures/Fastfetch/green1FF.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc'
 alias yz='yazi'
+alias klok='tty-clock -scbt'
+alias bs='brightnessctl s'
+alias start='start-hyprland'
 # Configuration Files
 alias kc='sudo nano ~/.config/kitty/kitty.conf'
 alias hc='sudo nano ~/.config/hypr/hyprland.conf'
