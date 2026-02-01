@@ -1,0 +1,10 @@
+/** Basic config file **/
+
+configuration {
+  show-icons:         true;
+  icon-theme:         "Papirus";
+}
+
+//@theme "/home/Xue/.config/rofi/themes/rounded-gray-dark.rasi"
+
+@theme "/home/Xue/.config/rofi/themes/rounded-white.rasi"
