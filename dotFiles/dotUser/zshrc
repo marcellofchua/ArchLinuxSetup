@@ -15,11 +15,8 @@ alias ls='eza -x --color=auto'
 alias grep='grep --color=auto'
 alias date="date +%D' '%A' '%r"
 alias cal='khal calendar'
-alias ff='kitten icat -n --align=left ~/Pictures/Fastfetch/green1FF.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc'
+alias ff='kitten icat -n --align=left ~/Pictures/Fastfetch/darkpurple2FF.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc'
 alias yz='yazi'
-alias klok='tty-clock -scbt'
-alias bs='brightnessctl s'
-alias start='start-hyprland'
 # Configuration Files
 alias kc='sudo nano ~/.config/kitty/kitty.conf'
 alias hc='sudo nano ~/.config/hypr/hyprland.conf'
@@ -28,11 +25,16 @@ alias ffc='sudo nano ~/.config/fastfetch/config.jsonc'
 # Language Translations
 alias enl='trans en:nl'
 alias nle='trans nl:en -b'
+# FFMPEG ALIASES
+alias imgres='ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0'
+alias mp4togif='ffmpeg -i input.mp4 -filter_complex "[0:v] split [a][b];[a] palettegen [p];[b][p] paletteuse" output.gif'
+alias splitgif='ffmpeg -i input.gif -vsync 0 output_frame_%04d.png'
 ### END of ALIASES
+
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-wal -R
+# wal -R
 clear
