@@ -1,40 +1,102 @@
-#window {
-  background-color: rgba(124,132,68,0.5);
-  box-shadow: 0 10px 15px -3px rgba(18,18,26,0.5), 0 4px 6px -4px rgba(18,18,26,0.5);
-  font-size: 1.6rem;
-  font-family: "JetBrains Mono NL";
+@define-color primary #D1A260;
+@define-color secondary #696969;
+@define-color background #1C1B1F;
+@define-color surface #212121;
+@define-color on-primary #FFF3DA;
+@define-color on-secondary #CAC4D0;
+@define-color on-background #E6E1E5;
+@define-color on-surface #F4EFF4;
+
+* {
+    font-family: "JetBrains Mono";
+    font-weight: bold;
+    font-size: 16px;
 }
-#window #outer-box {
-  padding: 0.15rem;
+
+*:selected {
+    color: @on-primary;
+    background-color: @primary;
 }
-#window #outer-box #input {
-  background-color: rgba(68,84,76,0.5);
-  color: #D5C075;
-  border: none;
-  border-bottom: 1px solid rgba(18,18,26,0.5);
-  padding: 1rem 1rem;
-  font-size: 2.4rem;
+
+/* Window */
+window {
+    margin: 0px;
+    padding: 10px;
+    border: 3px solid @on-primary;
+    border-radius: 7px;
+    background-color: @background;
+    animation: slideIn 0.5s ease-in-out both;
 }
-#window #outer-box #input:focus, #window #outer-box #input:focus-visible, #window #outer-box #input:active {
-  border: none;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
+
+/* Slide In */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-#window #outer-box #scroll {
+
+/* Inner Box */
+#inner-box {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: @surface;
+    animation: fadeIn 0.5s ease-in-out both;
 }
-#window #outer-box #scroll #inner-box {
+
+/* Fade In */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-#window #outer-box #scroll #inner-box #entry {
-  color: #44544C;
-  background-color: rgba(213,192,117,0.5)
-  padding: 1rem 1rem;
+
+/* Outer Box */
+#outer-box {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: @surface;
 }
-#window #outer-box #scroll #inner-box #entry #img {
-  width: 1rem;
-  margin-right: 1rem;
+
+/* Scroll */
+#scroll {
+    margin: 0px;
+    padding: 10px;
+    border: none;
 }
-#window #outer-box #scroll #inner-box #entry:selected {
-  color: #44544C;
-  background-color: rgba(213,192,117,0.5);
-  outline: none;
+
+/* Input */
+#input {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    color: @on-background;
+    background-color: @secondary;
+    animation: fadeIn 0.5s ease-in-out both;
+}
+
+/* Text */
+#text {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    color: @on-surface;
+    animation: fadeIn 0.5s ease-in-out both;
+}
+
+/* Selected Entry */
+#entry:selected {
+    background-color: @primary;
+    border-radius: 5px;
+}
+
+#entry:selected #text {
+    color: @on-primary;
 }
