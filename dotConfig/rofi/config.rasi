@@ -2,9 +2,9 @@
 
 configuration {
   show-icons:         true;
-  icon-theme:         "Papirus";
+  icon-theme:         "Chicago95";
 }
 
-//@theme "/home/Xue/.config/rofi/themes/rounded-gray-dark.rasi"
+//@theme "/home/NecroAme/.config/rofi/themes/rounded-gray-dark.rasi"
 
-@theme "/home/Xue/.config/rofi/themes/rounded-white.rasi"
+@theme "/home/NecroAme/.config/rofi/themes/rounded-white.rasi"
