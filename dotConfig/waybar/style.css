@@ -5,15 +5,15 @@
 }
 
 window#waybar {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0.3);
 }
 
 window > box {
-    margin-top: 8px;
+    margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #window {
