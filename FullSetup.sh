@@ -8,7 +8,7 @@ while true; do
             1) echo "Selected item #$REPLY which means $item"
             	yay -S kitty zsh man tldr btop eza fzf yazi clamav os-prober\
             	hyprland-git hyprland-meta-git\
-            	firefox thunar wofi\
+            	firefox thunar rofi\
             	nvidia-open nvidia-settings nvidia-utils;
                 break;;
             2) echo "Selected item #$REPLY which means $item"
