@@ -1,0 +1,10 @@
+/** Basic config file **/
+
+configuration {
+  show-icons:         true;
+  icon-theme:         "Chicago95";
+}
+
+//@theme "/home/NecroAme/.config/rofi/themes/rounded-gray-dark.rasi"
+
+@theme "/home/NecroAme/.config/rofi/themes/rounded-white.rasi"
