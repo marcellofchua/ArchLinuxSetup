@@ -1,0 +1,28 @@
+# Standard plugins can be found in $ZSH/plugins/
+plugins=( git zsh-autosuggestions zsh-syntax-highlighting )
+
+# Manually added to PATH
+export PATH="/home/NecroAme/.local/bin:$PATH"
+
+### START of ALIASES
+# Main
+alias hypr='start-hyprland'
+alias ls='eza -x --color=auto'
+alias grep='grep --color=auto'
+alias date="date +%D' '%A' '%r"
+alias cal='khal calendar'
+alias ff='kitten icat -n --align=left ~/Pictures/Fastfetch/green1FF.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc
+todo list'
+alias yz='yazi'
+alias bs='brightnessctl s'
+alias klok='tty-clock -scbtnr'
+alias ka='killall'
+# Configuration Files
+alias kc='sudo nano ~/.config/kitty/kitty.conf'
+alias hc='sudo nano ~/.config/hypr/hyprland.conf'
+alias zc='sudo nano ~/.zshrc'
+alias ffc='sudo nano ~/.config/fastfetch/config.jsonc'
+### END of ALIASES
+
+wal -R
+clear
