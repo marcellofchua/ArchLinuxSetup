@@ -1,0 +1,6 @@
+configuration {
+  show-icons:         true;
+  icon-theme:         "Chicago95";
+}
+
+@theme "/home/xue/.config/rofi/themes/boxy.rasi"

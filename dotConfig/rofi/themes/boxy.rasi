@@ -1,0 +1,13 @@
+* {
+    bg0:    rgba(0,0,0,1);
+    bg1:    rgba(0,0,0,1);
+    bg2:    #000000;
+    bg3:    #999999;
+
+    fg0:    #ffffff;
+    fg1:    #ffffff;
+    fg2:    #ffffff;
+    fg3:    #ffffff;
+}
+
+@import "template/boxy-template.rasi"
