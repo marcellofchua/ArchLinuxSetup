@@ -1,12 +1,12 @@
 {
-    "layer": "top",
-    "position": "top",
+    "output": "",
+    "layer": "bottom",
+    "position": "bottom",
     "modules-left": [
         "custom/launcher",
         "hyprland/workspaces",
         "cpu",
         "memory"
-
     ],
     "modules-center": [
         "hyprland/window"
@@ -17,9 +17,7 @@
         "network#spd",
         "wireplumber",
         "network",
-        "backlight",
         "clock",
-        "battery",
         "custom/power"
     ],
     "backlight": {
@@ -45,8 +43,8 @@
         "spacing": 7
     },
     "clock": {
-        "format": "{:%H:%M}  ",
-        "format-alt": "{:%A, %B %d, %Y (%R)}",
+        //"format": "{:%H:%M}  ",
+        "format": "{:%A, %B %d, %Y (%R)}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
             "mode": "year",
@@ -102,7 +100,7 @@
     "custom/launcher": {
         "format": " 󰣇 ",
         "tooltip": false,
-        "on-click": "wofi -c ~/.config/wofi/config -I"
+        "on-click": "rofi -show drun"
     },
     "custom/power": {
         "format": "  ",
