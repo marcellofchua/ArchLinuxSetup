@@ -1,11 +1,11 @@
 {
-    "firstLaunch": false,
-    "windowBounds": {
-        "x": 0,
-        "y": 0,
-        "width": 1270,
-        "height": 1014
-    },
-    "maximized": true,
-    "minimized": false
+    "discordBranch": "stable",
+    "minimizeToTray": true,
+    "arRPC": true,
+    "splashColor": "rgb(255, 255, 255)",
+    "splashBackground": "rgb(0, 0, 0)",
+    "spellCheckLanguages": [
+        "en-US",
+        "en"
+    ]
 }
