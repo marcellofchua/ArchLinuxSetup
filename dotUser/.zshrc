@@ -14,8 +14,8 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 # Standard plugins can be found in $ZSH/plugins/
 plugins=( git zsh-autosuggestions )
 
-# Manually added to PATH
-export PATH="/home/NecroAme/.local/bin:$PATH"
+# Manually added to PATH, lol
+export PATH="/home/$USER/.local/bin:$PATH"
 
 # ZSH Patina Syntax Highlighting
 eval "$(zsh-patina activate)"
