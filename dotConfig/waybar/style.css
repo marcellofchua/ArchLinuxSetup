@@ -19,7 +19,7 @@ window > box {
 #window {
     background-color: rgba(0,0,0,0.6);
     color: #ffffff;
-    border-radius: 0px;
+    border-radius: 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
 }
@@ -42,7 +42,7 @@ window#waybar.empty #window {
 
 #workspaces {
     background-color: rgba(0,0,0,0.6);
-    border-radius: 0px;
+    border-radius: 12px;
     padding: 0px 0px 0px 0px;
     margin: 5px 0;
 }
@@ -84,7 +84,7 @@ window#waybar.empty #window {
 
 #custom-launcher {
     background-color: rgba(0,0,0,0.6);
-    border-radius: 0px;
+    border-radius: 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
     color: #ffffff;
@@ -92,14 +92,14 @@ window#waybar.empty #window {
 
 #custom-power {
     background-color: rgba(0,0,0,0.6);
-    border-radius: 0px;
+    border-radius: 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
 }
 
 #cpu {
     background-color: rgba(0,0,0,0.6);
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 12px 12px 12px 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
     color: #ffffff;
@@ -107,7 +107,7 @@ window#waybar.empty #window {
 
 #memory {
     background-color: rgba(0,0,0,0.6);
-    border-radius: 0px;
+    border-radius: 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
     color: #ffffff;
@@ -115,7 +115,7 @@ window#waybar.empty #window {
 
 #wireplumber {
     background-color: rgba(0,0,0,0.6);
-    border-radius: 0px;
+    border-radius: 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
     color: #ffffff;
@@ -127,7 +127,7 @@ window#waybar.empty #window {
 
 #clock {
     background-color: rgba(0,0,0,0.6);;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 12px 12px 12px 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
     color: #ffffff;
@@ -136,7 +136,7 @@ window#waybar.empty #window {
 #network {
     background-color: rgba(0,0,0,0.6);
     color: #ffffff;
-    border-radius: 0px;
+    border-radius: 12px;
     padding: 12px;
     margin: 4px 0;
 }
@@ -147,7 +147,7 @@ window#waybar.empty #window {
 
 #tray {
     background-color: rgba(0,0,0,0.6);
-    border-radius: 0px;
+    border-radius: 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
 }
@@ -155,7 +155,7 @@ window#waybar.empty #window {
 #battery {
     background-color: rgba(0,0,0,0.6);
     color: #ffffff;
-    border-radius: 0px;
+    border-radius: 12px;
     padding: 12px;
     margin: 4px 0;
 }

@@ -2,6 +2,14 @@
 -- MONITORS --
 --------------
 hl.monitor({
+    output = "HDMI-A-1",
+    mode = "1920x1080@60.00Hz",
+    position = "1920x0",
+    scale = "1",
+    bitdepth = 10,
+})
+
+hl.monitor({
     output = "eDP-1",
     mode = "1920x1200@60.00Hz",
     position = "0x0",
@@ -82,7 +90,7 @@ hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("rofi -show run"))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("grim -g \"$(slurp)\" - | swappy -f -"))
-hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("firefox"))
+hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("zen-browser"))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("vesktop"))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("code-oss"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
@@ -147,7 +155,7 @@ hl.config({
         border_size = 4,
         col = {
             active_border = "rgba(221,153,153,1)",
-            inactive_border = "rgba(0,0,0,1)",
+            inactive_border = "rgba(0,0,0,0)",
         },
         resize_on_border = true,
         allow_tearing = false,
@@ -159,9 +167,9 @@ hl.config({
         inactive_opacity = 0.95,
         fullscreen_opacity = 1,
         blur = {
-            enabled = false,
-            size = 5,
-            passes = 5,
+            enabled = true,
+            size = 2,
+            passes = 2,
             new_optimizations = true,
             ignore_opacity = true,
             xray = true,
@@ -189,6 +197,15 @@ hl.config({
     },
 })
 
+-----------
+-- MEDIA --
+-----------
+-- Laptop multimedia keys for volume and LCD brightness
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 10%+"), { locked = true, repeating = true })
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%-"),      { locked = true, repeating = true })
+hl.bind("XF86AudioMute",        hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"),     { locked = true, repeating = true })
+hl.bind("XF86AudioMicMute",     hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"),   { locked = true, repeating = true })
+
 ---------------
 -- AUTOSTART --
 ---------------
@@ -202,3 +219,8 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("mako")
     hl.exec_cmd("hyprctl setcursor Neuro-sama 24")
 end)
+
+-----------
+-- LAYER --
+-----------
+hl.layer_rule({ match = { class = "waybar" }, blur = true, })
