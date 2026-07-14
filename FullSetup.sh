@@ -6,10 +6,7 @@ while true; do
     do
         case $REPLY in
             1) echo "Selected item #$REPLY which means $item"
-            	yay -S kitty zsh man tldr btop eza fzf yazi clamav os-prober\
-            	hyprland-git hyprland-meta-git\
-            	firefox thunar rofi\
-            	nvidia-open nvidia-settings nvidia-utils;
+            	yay -S kitty zsh man tldr btop eza fzf yazi clamav os-prober hyprland firefox thunar rofi;
                 break;;
             2) echo "Selected item #$REPLY which means $item"
                 yay -S okular kate code gnome-boxes anki obsidian mullvad-vpn\
@@ -17,9 +14,9 @@ while true; do
                 thunar-volman awww fastfetch ffmpeg tty-clock khal\
                 vesktop qbittorrent vlc cavalier\
                 grim slurp swappy pqiv wf-recorder\
-                cava feh imagemagick icat ffmpegthumbnailer tumbler viu ueberzugpp\
+                cava feh imagemagick icat ffmpegthumbnailer tumbler\
                 w3m lynx yt-dlp ytfzf sox\
-                gtk2 gtk3 gtk4 python-pywal16 nwg-look lxappearance\
+                gtk2 gtk3 gtk4 nwg-look lxappearance\
                 noto-fonts noto-fonts-cjk ttf-jetbrains-mono ttf-firacode ttf-nerd-fonts-symbols;
                 break;;
             3) echo "Selected item #$REPLY which means $item"
