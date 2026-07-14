@@ -1,6 +1,6 @@
 #!/bin/bash
 PS3="Select item please: "
-items=("Essentials Software" "Main Software" "Other Software")
+items=("Bare Minimum" "Main Software" "Other Software")
 while true; do
     select item in "${items[@]}" Quit
     do
