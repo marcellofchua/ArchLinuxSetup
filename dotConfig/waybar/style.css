@@ -1,0 +1,161 @@
+* {
+    font-family: "JetBrains Mono";
+    font-weight: bold;
+    font-size: 12px;
+}
+
+window#waybar {
+    background-color: rgba(0,0,0,0);
+}
+
+window > box {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#window {
+    background-color: rgba(0,0,0,0);
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 12px 12px 12px 12px;
+    margin: 4px 0;
+}
+
+window#waybar.empty #window {
+    background: rgba(255,255,255,0);
+}
+
+.modules-left {
+    padding: 0px;
+}
+
+.modules-right {
+    padding: 0px;
+}
+
+.modules-center {
+    padding: 0px;
+}
+
+#workspaces {
+    background-color: rgba(0,0,0,0);
+    border-radius: 12px;
+    padding: 0px 0px 0px 0px;
+    margin: 5px 0;
+}
+
+#workspaces button {
+    min-height: 0;
+    padding: 0 12px;
+    margin-right: 0px;
+    color: #000000;
+}
+
+#workspaces button.urgent {
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#workspaces button.empty {
+    color: #000000;
+}
+
+#workspaces button.visible {
+    color: #555555;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+}
+
+@keyframes blink {
+    to {
+        color: #ffffff;
+        background-color: #000000;
+    }
+}
+
+#custom-launcher {
+    background-color: rgba(0,0,0,0);
+    border-radius: 12px;
+    padding: 12px 12px 12px 12px;
+    margin: 4px 0;
+    color: #ffffff;
+}
+
+#custom-power {
+    background-color: rgba(0,0,0,0);
+    border-radius: 12px;
+    padding: 12px 12px 12px 12px;
+    margin: 4px 0;
+}
+
+#cpu {
+    background-color: rgba(0,0,0,0);
+    border-radius: 12px 12px 12px 12px;
+    padding: 12px 12px 12px 12px;
+    margin: 4px 0;
+    color: #ffffff;
+}
+
+#memory {
+    background-color: rgba(0,0,0,0);
+    border-radius: 12px;
+    padding: 12px 12px 12px 12px;
+    margin: 4px 0;
+    color: #ffffff;
+}
+
+#wireplumber {
+    background-color: rgba(0,0,0,0);
+    border-radius: 12px;
+    padding: 12px 12px 12px 12px;
+    margin: 4px 0;
+    color: #ffffff;
+}
+
+#wireplumber.muted {
+    color: #ffffff;
+}
+
+#clock {
+    background-color: rgba(0,0,0,0);
+    border-radius: 12px 12px 12px 12px;
+    padding: 12px 12px 12px 12px;
+    margin: 4px 0;
+    color: #ffffff;
+}
+
+#network {
+    background-color: rgba(0,0,0,0);
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 4px 0;
+}
+
+#network.disabled {
+    color: #ffffff;
+}
+
+#tray {
+    background-color: rgba(0,0,0,0);
+    border-radius: 12px;
+    padding: 12px 12px 12px 12px;
+    margin: 4px 0;
+}
+
+#battery {
+    background-color: rgba(0,0,0,0);
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 4px 0;
+}
