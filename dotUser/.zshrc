@@ -38,7 +38,7 @@ alias yz='yazi'
 alias ka='killall'
 alias bs='brightnessctl s'
 alias klok='tty-clock -scbtnr'
-alias audio='sh ~/.tmux-main.sh'
+alias audio='sh ~/.tmux-audio.sh'
 
 # Tools
 alias ff='kitten icat -n --align=left ~/Pictures/Fastfetch/Resize/lainFF.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc
