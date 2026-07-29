@@ -6,7 +6,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 source ~/GitHub/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -39,6 +38,7 @@ alias yz='yazi'
 alias ka='killall'
 alias bs='brightnessctl s'
 alias klok='tty-clock -scbtnr'
+alias audio='sh ~/.tmux-main.sh'
 
 # Tools
 alias ff='kitten icat -n --align=left ~/Pictures/Fastfetch/Resize/lainFF.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc
