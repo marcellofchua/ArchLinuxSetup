@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 SESSION_NAME="Audio"
 
@@ -11,17 +11,27 @@ else
 ### Step 1: Create tmux sessions if it doesn't exist yet
 	tmux new-session -d -s Audio
 
-### Configure Pulsemixer window
+### Configure Windows
+	tmux split-window -h
 	tmux split-window -v
-	tmux resize-pane -U 25
+	tmux select-pane -t 0
+	tmux split-window -v
+	tmux resize-pane -U 30
+
+### Start pulsemixer
 	tmux send-keys -t 0 pulsemixer ENTER
 
-### Configure yt-x window
-	tmux split-window -h
+### Start yt-x
+	tmux select-pane -t 1
 	tmux send-keys -t 1 yt-x ENTER
 
-### Configure cava window
-	tmux send-keys -t 2 cava ENTER
+### Start klok
+	tmux select-pane -t 2
+	tmux send-keys -t 2 peaclock ENTER
+
+### Start cava
+	tmux select-pane -t 3
+	tmux send-keys -t 3 cava ENTER
 
 ### Step 2: Attach to tmux sessions
 	tmux attach-session -t $SESSION_NAME
