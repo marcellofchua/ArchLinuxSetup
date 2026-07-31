@@ -94,7 +94,6 @@ hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("zen-browser"))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("vesktop"))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("code-oss"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
-hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("steam"))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("killall waybar || waybar"))
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("hyprshade toggle ~/.config/hypr/shaders/grayscale.glsl"))
 hl.bind(mainMod .. " + X", hl.dsp.exec_cmd("hyprshade toggle ~/.config/hypr/shaders/invert.glsl"))
@@ -150,12 +149,12 @@ hl.layer_rule({
 -----------------------
 hl.config({
     general = {
-        gaps_in = 0,
-        gaps_out = 0,
-        border_size = 4,
+        gaps_in = 10,
+        gaps_out = 20,
+        border_size = 5,
         col = {
             active_border = "rgba(221,153,153,1)",
-            inactive_border = "rgba(0,0,0,0)",
+            inactive_border = "rgba(95,135,135,1)",
         },
         resize_on_border = true,
         allow_tearing = false,
@@ -168,10 +167,9 @@ hl.config({
         fullscreen_opacity = 1,
         blur = {
             enabled = true,
-            size = 1,
+            size = 2,
             passes = 4,
             new_optimizations = true,
-            ignore_opacity = true,
             xray = true,
             popups = true,
         },
@@ -206,6 +204,9 @@ hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO
 hl.bind("XF86AudioMute",        hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"),     { locked = true, repeating = true })
 hl.bind("XF86AudioMicMute",     hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"),   { locked = true, repeating = true })
 
+hl.bind("XF86MonBrightnessUp",		hl.dsp.exec_cmd("brightnessctl s 25%+"), {locked = true, repeating = true})
+hl.bind("XF86MonBrightnessDown",	hl.dsp.exec_cmd("brightnessctl s 25%-"), {locked = true, repeating = true})
+
 ---------------
 -- AUTOSTART --
 ---------------
@@ -224,3 +225,4 @@ end)
 -- LAYER --
 -----------
 hl.layer_rule({ match = { class = "waybar" }, blur = true, })
+hl.layer_rule({ match = { class = "rofi" }, xray = true, })

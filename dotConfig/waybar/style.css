@@ -5,7 +5,7 @@
 }
 
 window#waybar {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0.25);
 }
 
 window > box {
@@ -17,15 +17,15 @@ window > box {
 }
 
 #window {
-    background-color: rgba(0,0,0,0);
-    color: #ffffff;
+    background-color: rgba(221,153,153,0);
+    color: #dc9898;
     border-radius: 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
 }
 
 window#waybar.empty #window {
-    background: rgba(255,255,255,0);
+    background: rgba(0,0,0,0);
 }
 
 .modules-left {
@@ -51,11 +51,11 @@ window#waybar.empty #window {
     min-height: 0;
     padding: 0 12px;
     margin-right: 0px;
-    color: #000000;
+    color: #5f8787;
 }
 
 #workspaces button.urgent {
-    color: #ffffff;
+    color: #dc9898;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -68,17 +68,17 @@ window#waybar.empty #window {
 }
 
 #workspaces button.visible {
-    color: #555555;
+    color: #5f8787;
 }
 
 #workspaces button.active {
-    color: #ffffff;
+    color: #dc9898;
 }
 
 @keyframes blink {
     to {
-        color: #ffffff;
-        background-color: #000000;
+        color: #dc9898;
+        background-color: #5f8787;
     }
 }
 
@@ -87,7 +87,7 @@ window#waybar.empty #window {
     border-radius: 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
-    color: #ffffff;
+    color: #dc9898;
 }
 
 #custom-power {
@@ -102,7 +102,7 @@ window#waybar.empty #window {
     border-radius: 12px 12px 12px 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
-    color: #ffffff;
+    color: #dc9898;
 }
 
 #memory {
@@ -110,7 +110,7 @@ window#waybar.empty #window {
     border-radius: 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
-    color: #ffffff;
+    color: #dc9898;
 }
 
 #wireplumber {
@@ -118,11 +118,11 @@ window#waybar.empty #window {
     border-radius: 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
-    color: #ffffff;
+    color: #dc9898;
 }
 
 #wireplumber.muted {
-    color: #ffffff;
+    color: #5f8787;
 }
 
 #clock {
@@ -130,19 +130,19 @@ window#waybar.empty #window {
     border-radius: 12px 12px 12px 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
-    color: #ffffff;
+    color: #dc9898;
 }
 
 #network {
     background-color: rgba(0,0,0,0);
-    color: #ffffff;
+    color: #dc9898;
     border-radius: 12px;
     padding: 12px;
     margin: 4px 0;
 }
 
 #network.disabled {
-    color: #ffffff;
+    color: #dc9898;
 }
 
 #tray {
@@ -154,7 +154,7 @@ window#waybar.empty #window {
 
 #battery {
     background-color: rgba(0,0,0,0);
-    color: #ffffff;
+    color: #dc9898;
     border-radius: 12px;
     padding: 12px;
     margin: 4px 0;

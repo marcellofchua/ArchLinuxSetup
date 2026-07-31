@@ -97,7 +97,7 @@
         "on-click": "networkmanager_dmenu"
     },
     "custom/launcher": {
-        "format": " 󰣇 ",
+        "format": "(づ ◕‿◕ )づ",
         "tooltip": false,
         "on-click": "rofi -show drun"
     },
