@@ -219,6 +219,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("awww-daemon")
     hl.exec_cmd("mako")
     hl.exec_cmd("hyprctl setcursor Neuro-sama 24")
+    hl.exec_cmd("hyprpm reload -m")
 end)
 
 -----------
@@ -226,3 +227,9 @@ end)
 -----------
 hl.layer_rule({ match = { class = "waybar" }, blur = true, })
 hl.layer_rule({ match = { class = "rofi" }, xray = true, })
+
+-------------
+-- PLUGINS --
+-------------
+animation = hyprfocusIn, 1, 2, easeOutQuint
+animation = hyprfocusOut, 1, 3, easeInSine
