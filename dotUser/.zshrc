@@ -32,10 +32,10 @@ alias hypr='start-hyprland'
 alias ls='eza -x --color=auto'
 alias grep='grep --color=auto'
 alias date="date +%D' '%A' '%r"
+alias ya='yazi'
+alias ka='killall'
 
 # Shortcuts
-alias yz='yazi'
-alias ka='killall'
 alias bs='brightnessctl s'
 alias klok='tty-clock -scbtnr'
 alias audio='sh ~/.tmux-audio.sh'
@@ -53,4 +53,3 @@ alias zc='sudo nano ~/.zshrc'
 ######################
 
 clear
-
