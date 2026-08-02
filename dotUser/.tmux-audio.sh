@@ -23,7 +23,7 @@ else
 
 ### Start yt-x
 	tmux select-pane -t 1
-	tmux send-keys -t 1 yt-x ENTER
+	tmux send-keys -t 1 bluetui ENTER
 
 ### Start klok
 	tmux select-pane -t 2
