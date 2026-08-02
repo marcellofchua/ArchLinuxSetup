@@ -1,15 +1,15 @@
 ---------------------
 -- WORKSPACE RULES --
 ---------------------
--- Audio Controls
-hl.workspace_rule({ workspace = "1", default_name = "audio" })
-hl.workspace_rule({ workspace = "name:audio", monitor = "eDP-1", layout = "scrolling", layout_opts = { direction = "down"} })
-hl.window_rule({ name = "audio_settings_width", match = { class = "kitty" }, scrolling_width = 1 })
+-- Media Controls
+hl.workspace_rule({ workspace = "1", default_name = "media" })
+hl.workspace_rule({ workspace = "name:media", monitor = "eDP-1", layout = "scrolling", layout_opts = { direction = "down"} })
+hl.window_rule({ name = "kitty_width", match = { class = "kitty" }, scrolling_width = 1 })
 hl.window_rule({ name = "easyeffects_width", match = { title = "Easy Effects" }, scrolling_width = 1 })
 
--- Zen-Browser
-hl.workspace_rule({ workspace = "2", default_name = "zen" })
-hl.workspace_rule({ workspace = "name:zen", monitor = "eDP-1" })
+-- Main
+hl.workspace_rule({ workspace = "2", default_name = "main" })
+hl.workspace_rule({ workspace = "name:main", monitor = "eDP-1", layout = "scrolling", layout_opts = { direction = "down"} })
 
 --------------
 -- MONITORS --
@@ -227,8 +227,9 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("hyprctl setcursor Neuro-sama 24")
     hl.exec_cmd("hyprpm reload -m")
 -- Main Programs
-    hl.exec_cmd("kitty -- zsh -c 'sh ~/.tmux-audio.sh'", { workspace = "1" })
     hl.exec_cmd("easyeffects", { workspace = "1" })
+    hl.exec_cmd("kitty -- zsh -c 'sh ~/.tmux-audio.sh'", { workspace = "1" })
+    hl.exec_cmd("kitty -- zsh -c 'yt-x'", { workspace = "1" })
     hl.exec_cmd("zen-browser", { workspace = "2" })
 end)
 
