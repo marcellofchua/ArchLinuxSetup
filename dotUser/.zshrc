@@ -32,7 +32,7 @@ alias hypr='start-hyprland'
 alias ls='eza -x --color=auto'
 alias grep='grep --color=auto'
 alias date="date +%D' '%A' '%r"
-alias ya='yazi'
+alias yz='yazi'
 alias ka='killall'
 
 # Shortcuts
