@@ -1,3 +1,16 @@
+---------------------
+-- WORKSPACE RULES --
+---------------------
+-- Audio Controls
+hl.workspace_rule({ workspace = "1", default_name = "audio" })
+hl.workspace_rule({ workspace = "name:audio", monitor = "eDP-1", layout = "scrolling", layout_opts = { direction = "down"} })
+hl.window_rule({ name = "audio_settings_width", match = { class = "kitty" }, scrolling_width = 1 })
+hl.window_rule({ name = "easyeffects_width", match = { title = "Easy Effects" }, scrolling_width = 1 })
+
+-- Zen-Browser
+hl.workspace_rule({ workspace = "2", default_name = "zen" })
+hl.workspace_rule({ workspace = "name:zen", monitor = "eDP-1" })
+
 --------------
 -- MONITORS --
 --------------
@@ -27,9 +40,9 @@ local menu = "rofi --show drun -n"
 hl.env("HYPRCURSOR_THEME", "Neuro-Sama")
 hl.env("HYPRCURSOR_SIZE", "24")
 
-----------------------
--- STARTUP HYPRLAND --
-----------------------
+----------------
+-- ANIMATIONS --
+----------------
 hl.curve("fluid", { type = "bezier", points = { { 0.075, 0.425 }, { 0.125, 1 } } })
 hl.curve("snappy", { type = "bezier", points = { { 0.15, 0.5 }, { 0.2, 1 } } })
 hl.animation({
@@ -136,14 +149,6 @@ hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }))
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag())
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize())
 
-hl.layer_rule({
-    name = "no_anim_for_selection",
-    match = {
-        namespace = "selection",
-    },
-    no_anim = true,
-})
-
 -----------------------
 -- WINDOW MANAGEMENT --
 -----------------------
@@ -211,6 +216,7 @@ hl.bind("XF86MonBrightnessDown",	hl.dsp.exec_cmd("brightnessctl s 25%-"), {locke
 -- AUTOSTART --
 ---------------
 hl.on("hyprland.start", function()
+-- Background Programs
     hl.exec_cmd("/usr/lib/xdg-desktop-portal-hyprland")
     hl.exec_cmd("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
     hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
@@ -220,6 +226,10 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("mako")
     hl.exec_cmd("hyprctl setcursor Neuro-sama 24")
     hl.exec_cmd("hyprpm reload -m")
+-- Main Programs
+    hl.exec_cmd("kitty -- zsh -c 'sh ~/.tmux-audio.sh'", { workspace = "1" })
+    hl.exec_cmd("easyeffects", { workspace = "1" })
+    hl.exec_cmd("zen-browser", { workspace = "2" })
 end)
 
 -----------
