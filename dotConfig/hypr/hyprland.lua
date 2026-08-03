@@ -11,6 +11,10 @@ hl.window_rule({ name = "easyeffects_width", match = { title = "Easy Effects" },
 hl.workspace_rule({ workspace = "2", default_name = "main" })
 hl.workspace_rule({ workspace = "name:main", monitor = "eDP-1", layout = "scrolling", layout_opts = { direction = "down"} })
 hl.window_rule({ name = "zen-browser_width", match = { class = "zen" }, scrolling_width = 1 })
+hl.window_rule({ name = "librewolf_width", match = { class = "librewolf" }, scrolling_width = 1 })
+hl.window_rule({ name = "firefox_width", match = { class = "firefox" }, scrolling_width = 1 })
+hl.window_rule({ name = "luakit_width", match = { class = "luakit" }, scrolling_width = 1 })
+hl.window_rule({ name = "qutebrowser_width", match = { class = "org.qutebrowser.qutebrowser" }, scrolling_width = 1 })
 
 --------------
 -- MONITORS --
