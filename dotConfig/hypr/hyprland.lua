@@ -10,6 +10,7 @@ hl.window_rule({ name = "easyeffects_width", match = { title = "Easy Effects" },
 -- Main
 hl.workspace_rule({ workspace = "2", default_name = "main" })
 hl.workspace_rule({ workspace = "name:main", monitor = "eDP-1", layout = "scrolling", layout_opts = { direction = "down"} })
+hl.window_rule({ name = "zen-browser_width", match = { class = "zen" }, scrolling_width = 1 })
 
 --------------
 -- MONITORS --
