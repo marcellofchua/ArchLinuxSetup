@@ -1,20 +1,24 @@
 ---------------------
 -- WORKSPACE RULES --
 ---------------------
--- Media Controls
-hl.workspace_rule({ workspace = "1", default_name = "media" })
-hl.workspace_rule({ workspace = "name:media", monitor = "eDP-1", layout = "scrolling", layout_opts = { direction = "down"} })
+-- Background Workspace
+hl.workspace_rule({ workspace = "1", default_name = "Background" })
+hl.workspace_rule({ workspace = "name:Background", monitor = "eDP-1", layout = "scrolling", layout_opts = { direction = "down"} })
 hl.window_rule({ name = "kitty_width", match = { class = "kitty" }, scrolling_width = 1 })
 hl.window_rule({ name = "easyeffects_width", match = { title = "Easy Effects" }, scrolling_width = 1 })
 
--- Main
-hl.workspace_rule({ workspace = "2", default_name = "main" })
-hl.workspace_rule({ workspace = "name:main", monitor = "eDP-1", layout = "scrolling", layout_opts = { direction = "down"} })
+-- Main Workspace
+hl.workspace_rule({ workspace = "2", default_name = "Main" })
+hl.workspace_rule({ workspace = "name:Main", monitor = "eDP-1", layout = "scrolling", layout_opts = { direction = "down"} })
 hl.window_rule({ name = "zen-browser_width", match = { class = "zen" }, scrolling_width = 1 })
 hl.window_rule({ name = "librewolf_width", match = { class = "librewolf" }, scrolling_width = 1 })
 hl.window_rule({ name = "firefox_width", match = { class = "firefox" }, scrolling_width = 1 })
 hl.window_rule({ name = "luakit_width", match = { class = "luakit" }, scrolling_width = 1 })
 hl.window_rule({ name = "qutebrowser_width", match = { class = "org.qutebrowser.qutebrowser" }, scrolling_width = 1 })
+
+-- Scratchpad Workspace
+hl.workspace_rule({ workspace = "3", default_name = "Scratchpad" })
+hl.workspace_rule({ workspace = "name:Scratchpad", monitor = "eDP-1", layout = "scrolling", layout_opts = { direction = "down"} })
 
 --------------
 -- MONITORS --
@@ -159,12 +163,12 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize())
 -----------------------
 hl.config({
     general = {
-        gaps_in = 10,
-        gaps_out = 20,
+        gaps_in = 5,
+        gaps_out = 10,
         border_size = 5,
         col = {
-            active_border = "rgba(221,153,153,1)",
-            inactive_border = "rgba(95,135,135,1)",
+            active_border = "rgba(161,177,227,1)",
+            inactive_border = "rgba(220,119,134,1)",
         },
         resize_on_border = true,
         allow_tearing = false,
@@ -178,7 +182,7 @@ hl.config({
         blur = {
             enabled = true,
             size = 2,
-            passes = 4,
+            passes = 5,
             new_optimizations = true,
             xray = true,
             popups = true,
@@ -232,10 +236,12 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("hyprctl setcursor Neuro-sama 24")
     hl.exec_cmd("hyprpm reload -m")
 -- Main Programs
-    hl.exec_cmd("easyeffects", { workspace = "1" })
-    hl.exec_cmd("kitty -- zsh -c 'sh ~/.tmux-audio.sh'", { workspace = "1" })
+    hl.exec_cmd("kitty -- zsh -c 'btop'", { workspace = "1" })
     hl.exec_cmd("kitty -- zsh -c 'yt-x'", { workspace = "1" })
+    hl.exec_cmd("kitty -- zsh -c 'sh ~/.tmux-audio.sh'", { workspace = "1" })
+    hl.exec_cmd("easyeffects", { workspace = "1" })
     hl.exec_cmd("zen-browser", { workspace = "2" })
+    hl.exec_cmd("kitty -- zsh -c 'ff'", { workspace = "3" })
 end)
 
 -----------

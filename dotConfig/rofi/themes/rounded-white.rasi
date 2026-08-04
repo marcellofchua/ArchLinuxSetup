@@ -4,13 +4,13 @@
 * {
     bg0:    rgba(0,0,0,0.25);
     bg1:    rgba(0,0,0,0.25);
-    bg2:    #dc9898;
+    bg2:    #dc7786;
     bg3:    #c0c0c0;
 
-    fg0:    #5f8787;
-    fg1:    #dc9898;
-    fg2:    #dc9898;
-    fg3:    #dc9898;
+    fg0:    #a1b1e3;
+    fg1:    #dc7786;
+    fg2:    #dc7786;
+    fg3:    #dc7786;
 }
 
 @import "template/rounded-template.rasi"

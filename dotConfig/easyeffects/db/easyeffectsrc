@@ -1,3 +1,7 @@
+[Spectrum]
+height=400
+spectrumShape=lines
+
 [StreamInputs]
 inputDevice=alsa_input.pci-0000_04_00.6.HiFi__Mic1__source
 
@@ -8,5 +12,5 @@ visiblePage=pluginsPage
 visiblePlugin=equalizer#0
 
 [Window]
-height=1140
-width=1870
+height=1109
+width=1890

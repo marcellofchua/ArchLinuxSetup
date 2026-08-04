@@ -17,8 +17,8 @@ window > box {
 }
 
 #window {
-    background-color: rgba(221,153,153,0);
-    color: #dc9898;
+    background-color: rgba(220,119,134,0);
+    color: #a1b1e3;
     border-radius: 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
@@ -51,11 +51,11 @@ window#waybar.empty #window {
     min-height: 0;
     padding: 0 12px;
     margin-right: 0px;
-    color: #5f8787;
+    color: #93738c;
 }
 
 #workspaces button.urgent {
-    color: #dc9898;
+    color: #a1b1e3;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -68,17 +68,17 @@ window#waybar.empty #window {
 }
 
 #workspaces button.visible {
-    color: #5f8787;
+    color: #a1b1e3;
 }
 
 #workspaces button.active {
-    color: #dc9898;
+    color: #dc7786;
 }
 
 @keyframes blink {
     to {
-        color: #dc9898;
-        background-color: #5f8787;
+        color: #a1b1e3;
+        background-color: #a1b1e3;
     }
 }
 
@@ -87,7 +87,7 @@ window#waybar.empty #window {
     border-radius: 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
-    color: #dc9898;
+    color: #dc7786;
 }
 
 #custom-power {
@@ -102,7 +102,7 @@ window#waybar.empty #window {
     border-radius: 12px 12px 12px 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
-    color: #dc9898;
+    color: #a1b1e3;
 }
 
 #memory {
@@ -110,7 +110,7 @@ window#waybar.empty #window {
     border-radius: 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
-    color: #dc9898;
+    color: #a1b1e3;
 }
 
 #wireplumber {
@@ -118,11 +118,11 @@ window#waybar.empty #window {
     border-radius: 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
-    color: #dc9898;
+    color: #a1b1e3;
 }
 
 #wireplumber.muted {
-    color: #5f8787;
+    color: #a1b1e3;
 }
 
 #clock {
@@ -130,19 +130,19 @@ window#waybar.empty #window {
     border-radius: 12px 12px 12px 12px;
     padding: 12px 12px 12px 12px;
     margin: 4px 0;
-    color: #dc9898;
+    color: #a1b1e3;
 }
 
 #network {
     background-color: rgba(0,0,0,0);
-    color: #dc9898;
+    color: #a1b1e3;
     border-radius: 12px;
     padding: 12px;
     margin: 4px 0;
 }
 
 #network.disabled {
-    color: #dc9898;
+    color: #a1b1e3;
 }
 
 #tray {
@@ -154,7 +154,7 @@ window#waybar.empty #window {
 
 #battery {
     background-color: rgba(0,0,0,0);
-    color: #dc9898;
+    color: #a1b1e3;
     border-radius: 12px;
     padding: 12px;
     margin: 4px 0;
