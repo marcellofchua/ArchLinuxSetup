@@ -1,16 +1,26 @@
+[Presets]
+lastLoadedOutputPreset=Laptop Speakers
+
 [Spectrum]
 height=400
-spectrumShape=lines
+nPoints=40
+spectrumShape=area
 
 [StreamInputs]
-inputDevice=alsa_input.pci-0000_04_00.6.HiFi__Mic1__source
+inputDevice=alsa_input.pci-0000_04_00.6.HiFi__Mic2__source
 
 [StreamOutputs]
-outputDevice=alsa_output.pci-0000_04_00.6.HiFi__Speaker__sink
-plugins=equalizer#0,limiter#0
+mostUsedPresets=Laptop Speakers,Voice
+outputDevice=alsa_output.pci-0000_04_00.6.HiFi__Headphones__sink
+plugins=equalizer#0,bass_enhancer#0,limiter#0
+usedPresets=Voice:1,Laptop Speakers:1
 visiblePage=pluginsPage
 visiblePlugin=equalizer#0
 
+[Style]
+forceBreezeTheme=false
+
 [Window]
-height=1109
+englishLanguage=true
+height=1160
 width=1890

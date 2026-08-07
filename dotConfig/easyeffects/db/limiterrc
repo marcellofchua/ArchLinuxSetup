@@ -1,2 +1,8 @@
 [soe][Limiter#0]
-inputGain=-2
+attack=0.25
+dithering=8
+inputGain=-12
+mode=1
+oversampling=22
+release=0.25
+threshold=-12

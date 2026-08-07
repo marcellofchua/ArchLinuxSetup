@@ -1,5 +1,7 @@
 [Graph]
-backgroundColor=220,119,134
+backgroundColor=0,0,0
+borderColors=220,119,134
 colorTheme=userDefined
-plotAreaBackgroundColor=220,119,134
-seriesColors=161,178,227
+lineWidth=5
+plotAreaBackgroundColor=161,178,227
+seriesColors=220,119,134
