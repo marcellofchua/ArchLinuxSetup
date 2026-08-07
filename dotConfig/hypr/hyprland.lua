@@ -16,10 +16,6 @@ hl.window_rule({ name = "firefox_width", match = { class = "firefox" }, scrollin
 hl.window_rule({ name = "luakit_width", match = { class = "luakit" }, scrolling_width = 1 })
 hl.window_rule({ name = "qutebrowser_width", match = { class = "org.qutebrowser.qutebrowser" }, scrolling_width = 1 })
 
--- Scratchpad Workspace
-hl.workspace_rule({ workspace = "3", default_name = "Scratchpad" })
-hl.workspace_rule({ workspace = "name:Scratchpad", monitor = "eDP-1", layout = "scrolling", layout_opts = { direction = "down"} })
-
 --------------
 -- MONITORS --
 --------------
@@ -167,8 +163,8 @@ hl.config({
         gaps_out = 10,
         border_size = 5,
         col = {
-            active_border = "rgba(161,177,227,1)",
-            inactive_border = "rgba(220,119,134,1)",
+            active_border = "rgba(255,212,214,1)",
+            inactive_border = "rgba(188,149,174,1)",
         },
         resize_on_border = true,
         allow_tearing = false,
@@ -227,7 +223,7 @@ hl.bind("XF86MonBrightnessDown",	hl.dsp.exec_cmd("brightnessctl s 25%-"), {locke
 hl.on("hyprland.start", function()
 -- Background Programs
     hl.exec_cmd("/usr/lib/xdg-desktop-portal-hyprland")
-    hl.exec_cmd("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
+--    hl.exec_cmd("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
     hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
     hl.exec_cmd("systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
     hl.exec_cmd("hypridle")
@@ -241,7 +237,6 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("kitty -- zsh -c 'sh ~/.tmux-audio.sh'", { workspace = "1" })
     hl.exec_cmd("easyeffects", { workspace = "1" })
     hl.exec_cmd("zen-browser", { workspace = "2" })
-    hl.exec_cmd("kitty -- zsh -c 'ff'", { workspace = "3" })
 end)
 
 -----------
@@ -249,6 +244,9 @@ end)
 -----------
 hl.layer_rule({ match = { class = "waybar" }, blur = true, })
 hl.layer_rule({ match = { class = "rofi" }, xray = true, })
+hl.layer_rule({ match = { class = "swappy" }, xray = false, })
+hl.layer_rule({ match = { class = "grim" }, xray = false, })
+hl.layer_rule({ match = { class = "slurp" }, xray = false, })
 
 -------------
 -- PLUGINS --

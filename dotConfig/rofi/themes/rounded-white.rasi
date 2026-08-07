@@ -2,15 +2,17 @@
 /* Author: Newman Sanchez (https://github.com/newmanls) */
 
 * {
-    bg0:    rgba(0,0,0,0.25);
-    bg1:    rgba(0,0,0,0.25);
+    font: "JetBrains Mono";
+    bg0:    rgba(0,0,0,0.5);
+    bg1:    rgba(0,0,0,0.5);
     bg2:    #dc7786;
-    bg3:    #c0c0c0;
+    bg3:    #feebec;
 
     fg0:    #a1b1e3;
     fg1:    #dc7786;
     fg2:    #dc7786;
     fg3:    #dc7786;
+
 }
 
 @import "template/rounded-template.rasi"
