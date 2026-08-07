@@ -43,6 +43,7 @@ alias audio='sh ~/.tmux-audio.sh'
 # Tools
 alias ff='kitten icat -n --align=left ~/Pictures/Fastfetch/Resize/lainFF.gif | fastfetch --raw - --config ~/.config/fastfetch/presets/main.jsonc
 todo list'
+alias tra='trans'
 
 # Configuration Files
 alias hc='sudo nano ~/.config/hypr/hyprland.lua'
@@ -52,4 +53,5 @@ alias zc='sudo nano ~/.zshrc'
 ### END of ALIASES ###
 ######################
 
+wal -R
 clear
